@@ -35,4 +35,4 @@ jobs:
           chmod +x sshpass.sh
 
       - name: Execute SSH Commands
-        run: bash -x ./sshpass.sh
+        run: ./sshpass.sh
