@@ -5,8 +5,6 @@ if [ $hy2 -eq 0 ];then
   cd /home/shuinoo/serv00-play/singbox
   ./start.sh
   echo "$current_time hy2 is deaded..." >> /home/shuinoo/hy2_status.log
-  exit 1
 else
   echo "$current_time hy2 is still running..." >> /home/shuinoo/hy2_status.log
-  exit 0
 fi
