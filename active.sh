@@ -3,7 +3,7 @@ current_time=$(date)
 hy2=$(ps aux | grep "serv00sb run -c ./config.json" | grep -v "grep" | wc -l | awk '{print $1}')
 if [ $hy2 -eq 0 ];then
   cd /home/shuinoo/serv00-play/singbox
-  nohup ./serv00sb run -c ./config.json &
+  ./start.sh
   echo "$current_time hy2 is deaded..." >> /home/shuinoo/hy2_status.log
   exit 1
 else
